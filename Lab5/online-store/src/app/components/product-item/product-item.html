@@ -1,0 +1,36 @@
+<div class="product-card">
+  <div class="gallery">
+    <img [src]="product().images[currentImageIndex]" class="main-image" alt="product">
+    <div class="thumbnails">
+      @for (img of product().images; track $index) {
+        <img
+          [src]="img"
+          (click)="changeImage($index)"
+          [class.active]="$index === currentImageIndex">
+      }
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>{{ product().name }}</h3>
+    <p class="description">{{ product().description }}</p>
+    <div class="meta">
+      <span class="rating">⭐ {{ product().rating }}</span>
+      <span class="likes">❤ {{ product().likes }}</span>
+    </div>
+    <div class="price">{{ product().price | number }} ₸</div>
+  </div>
+
+  <div class="actions">
+    <a [href]="product().link" target="_blank" class="kaspi-link">Buy on Kaspi</a>
+    <div class="primary-actions">
+      <button type="button" class="btn like" (click)="like()">Like</button>
+      <button type="button" class="btn delete" (click)="deleteProduct()">Delete</button>
+    </div>
+    <p class="share-label">Share the product via:</p>
+    <div class="share-buttons">
+      <button type="button" (click)="shareWhatsApp()" class="btn wa">WA</button>
+      <button type="button" (click)="shareTelegram()" class="btn tg">TG</button>
+    </div>
+  </div>
+</div>

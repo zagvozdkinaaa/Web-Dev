@@ -1,0 +1,151 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: black;
+  color: rgb(157, 157, 157);
+  padding: 15px 20px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.title1 {
+  margin: 0;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 600px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-block {
+  background-color: #ffff;
+  width: 65%;
+}
+
+.title2 {
+  text-align: left;
+  font-weight: 100;
+}
+
+.input-block {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  width: 80%;
+  height: 35px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#todo-input {
+  font-size: 14px;
+}
+
+#add-btn {
+  background: #337ab7;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition:
+    background-color 0.1s ease,
+    transform 0.1s ease;
+}
+
+#add-btn:hover {
+  background: #184974;
+}
+
+ul#todo-list:empty {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-align: left;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  height: 40px;
+  text-align: left;
+}
+li:last-child {
+  border-bottom: none;
+}
+
+.todo-text {
+  flex-grow: 1;
+  margin: 0 40px;
+  text-align: left;
+  display: block;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #337ab7;
+  cursor: pointer;
+  border-radius: 2px;
+  flex: none;
+}
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  margin-right: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.delete-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: invert(17%) sepia(97%) saturate(7486%) hue-rotate(2deg)
+    brightness(101%) contrast(116%);
+}

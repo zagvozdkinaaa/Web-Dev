@@ -1,0 +1,30 @@
+<div class="product-card">
+  <div class="gallery">
+    <img [src]="product.images[currentImageIndex]" class="main-image" alt="product">
+    <div class="thumbnails">
+      <img *ngFor="let img of product.images; let i = index"
+           [src]="img"
+           (click)="changeImage(i)"
+           [class.active]="i === currentImageIndex">
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+    <div class="rating">
+      <span>⭐</span>
+      <input type="number" [(ngModel)]="product.rating" min="0" max="5" step="0.1" class="rating-input" title="Rating">
+    </div>
+    <div class="price">{{ product.price | number }} ₸</div>
+  </div>
+
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="kaspi-link">Buy on Kaspi</a>
+    <p class="share-label">Share the product via:</p>
+    <div class="share-buttons">
+      <button (click)="shareWhatsApp()" class="btn wa">WA</button>
+      <button (click)="shareTelegram()" class="btn tg">TG</button>
+    </div>
+  </div>
+</div>

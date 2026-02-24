@@ -1,0 +1,157 @@
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  min-height: 600px;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+  width: 80%;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  padding-left: 25px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.thumbnails img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.thumbnails img.active {
+  border-color: #f14635;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.rating {
+  font-weight: 500;
+}
+
+.likes {
+  font-size: 0.95rem;
+  color: #e53935;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.kaspi-link {
+  display: block;
+  background: #f14635;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.primary-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.like {
+  background: #ff9800;
+}
+
+.delete {
+  background: #e53935;
+}
+
+.wa {
+  background: #25d366;
+}
+
+.tg {
+  background: #0088cc;
+}
+
+.share-label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.kaspi-link,
+.btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.kaspi-link:hover {
+  background-color: #d13a2a;
+  transform: translateY(-2px);
+}
+
+.wa:hover {
+  background-color: #1eb954;
+  filter: brightness(0.9);
+}
+
+.tg:hover {
+  background-color: #0077b5;
+  filter: brightness(0.9);
+}
+
+.like:hover {
+  background-color: #fb8c00;
+  filter: brightness(0.9);
+}
+
+.delete:hover {
+  background-color: #d32f2f;
+  filter: brightness(0.9);
+}
+
+.kaspi-link:active,
+.btn:active {
+  transform: scale(0.95);
+}
