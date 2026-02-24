@@ -1,0 +1,38 @@
+# --- Зависимости и сборка ---
+# Удаляем тяжелую папку с библиотеками
+node_modules/
+# Папки, создаваемые Angular при запуске и сборке
+.angular/
+dist/
+.cache/
+
+# --- Редакторы кода (IDE) ---
+# Настройки WebStorm/IntelliJ (которые ты только что удаляла)
+.idea/
+*.iws
+*.iml
+*.ipr
+# Настройки VS Code
+.vscode/
+.history/
+
+# --- Системный мусор ---
+# Файлы macOS (тот самый .DS_Store)
+.DS_Store
+.AppleDouble
+.LSOverride
+# Файлы Windows
+Thumbs.db
+desktop.ini
+
+# --- Логи и временные файлы ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# --- Окружение (секреты) ---
+.env
+.env.local
