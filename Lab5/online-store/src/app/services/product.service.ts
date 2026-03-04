@@ -22,6 +22,7 @@ export class ProductService {
       price: 774648,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 1,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pfc/p95/64168414.png?format=gallery-medium',
       images: [
@@ -38,6 +39,7 @@ export class ProductService {
       price: 490000,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 1,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf3/h65/87295470731294.png?format=gallery-medium',
       images: [
@@ -54,6 +56,7 @@ export class ProductService {
       price: 68665,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 1,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p0d/pdb/61291709.jpg?format=gallery-medium',
       images: [
@@ -70,6 +73,7 @@ export class ProductService {
       price: 107990,
       rating: 4.7,
       likes: 0,
+      isLiked: false,
       categoryId: 1,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p69/p16/73805344.png?format=gallery-medium',
       images: [
@@ -86,6 +90,7 @@ export class ProductService {
       price: 88998,
       rating: 4.7,
       likes: 0,
+      isLiked: false,
       categoryId: 1,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p79/pb5/25477542.jpeg?format=gallery-medium',
       images: [
@@ -104,6 +109,7 @@ export class ProductService {
       price: 303640,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 2,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf1/h03/84526695677982.jpg?format=gallery-medium',
       images: [
@@ -120,6 +126,7 @@ export class ProductService {
       price: 22697,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 2,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h17/h2b/86703072149534.png?format=gallery-medium',
       images: [
@@ -136,6 +143,7 @@ export class ProductService {
       price: 5999,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 2,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hb2/hc2/64119540187166.jpg?format=gallery-medium',
       images: [
@@ -152,6 +160,7 @@ export class ProductService {
       price: 93989,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 2,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p46/p08/14795526.png?format=gallery-medium',
       images: [
@@ -168,6 +177,7 @@ export class ProductService {
       price: 39246,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 2,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pe9/pbf/20783592.jpg?format=gallery-medium',
       images: [
@@ -186,6 +196,7 @@ export class ProductService {
       price: 59900,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 3,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p66/p01/71240688.png?format=gallery-medium',
       images: [
@@ -202,6 +213,7 @@ export class ProductService {
       price: 2228,
       rating: 4.7,
       likes: 0,
+      isLiked: false,
       categoryId: 3,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p66/p33/55083784.jpg?format=gallery-medium',
       images: [
@@ -218,6 +230,7 @@ export class ProductService {
       price: 42000,
       rating: 4.7,
       likes: 0,
+      isLiked: false,
       categoryId: 3,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pb4/pd0/83083485.png?format=gallery-medium',
       images: [
@@ -234,6 +247,7 @@ export class ProductService {
       price: 214390,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 3,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p4a/p07/107939309.jpg?format=gallery-medium',
       images: [
@@ -250,6 +264,7 @@ export class ProductService {
       price: 189999,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 3,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p95/pcf/52521178.jpg?format=gallery-medium',
       images: [
@@ -268,6 +283,7 @@ export class ProductService {
       price: 29888,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 4,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p64/p52/58332179.jpg?format=gallery-medium',
       images: [
@@ -284,6 +300,7 @@ export class ProductService {
       price: 4999,
       rating: 4.8,
       likes: 0,
+      isLiked: false,
       categoryId: 4,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p12/pf0/56355542.jpeg?format=gallery-medium',
       images: [
@@ -300,6 +317,7 @@ export class ProductService {
       price: 67469,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 4,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hcd/hb2/87129104220190.jpg?format=gallery-medium',
       images: [
@@ -316,6 +334,7 @@ export class ProductService {
       price: 19999,
       rating: 4.9,
       likes: 0,
+      isLiked: false,
       categoryId: 4,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h57/h11/80130097381406.jpg?format=gallery-medium',
       images: [
@@ -332,6 +351,7 @@ export class ProductService {
       price: 27955,
       rating: 4.7 ,
       likes: 0,
+      isLiked: false,
       categoryId: 4,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p79/p73/33742244.png?format=gallery-medium',
       images: [
@@ -343,12 +363,20 @@ export class ProductService {
     }
   ];
 
+  private readonly deletedProductIds = new Set<number>();
+
   getCategories(): Category[] {
     return this.categories;
   }
 
   getProductsByCategory(categoryId: number): Product[] {
-    return this.products.filter((p) => p.categoryId === categoryId);
+    return this.products.filter(
+      (p) => p.categoryId === categoryId && !this.deletedProductIds.has(p.id)
+    );
+  }
+
+  deleteProduct(productId: number): void {
+    this.deletedProductIds.add(productId);
   }
 }
 

@@ -24,7 +24,13 @@
   <div class="actions">
     <a [href]="product().link" target="_blank" class="kaspi-link">Buy on Kaspi</a>
     <div class="primary-actions">
-      <button type="button" class="btn like" (click)="like()">Like</button>
+      <button
+        type="button"
+        class="btn like"
+        [class.active]="product().isLiked"
+        (click)="like()">
+        {{ product().isLiked ? 'Unlike' : 'Like' }}
+      </button>
       <button type="button" class="btn delete" (click)="deleteProduct()">Delete</button>
     </div>
     <p class="share-label">Share the product via:</p>

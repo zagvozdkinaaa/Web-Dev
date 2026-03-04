@@ -31,7 +31,14 @@ export class ProductItemComponent {
   }
 
   like() {
-    this.product().likes++;
+    const value = this.product();
+    if (value.isLiked) {
+      value.likes = Math.max(0, value.likes - 1);
+      value.isLiked = false;
+    } else {
+      value.likes++;
+      value.isLiked = true;
+    }
   }
 
   deleteProduct() {

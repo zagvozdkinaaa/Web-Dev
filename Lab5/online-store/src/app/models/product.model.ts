@@ -5,6 +5,7 @@ export interface Product {
   price: number;
   rating: number;
   likes: number;
+  isLiked: boolean;
   categoryId: number;
   image: string;
   images: string[];
