@@ -1,0 +1,21 @@
+<h2>Photos</h2>
+
+<a [routerLink]="['../']">Back to album</a>
+
+@if (displayedPhotos$ | async; as photos) {
+  @if (photos.length === 0) {
+    <p>No photos.</p>
+  } @else {
+    <div class="grid">
+      @for (photo of photos; track photo.id) {
+        <figure class="card" [title]="photo.title">
+          <img [src]="photo.thumbnailUrl" [alt]="photo.title" loading="lazy" />
+          <figcaption>{{ photo.title }}</figcaption>
+        </figure>
+      }
+    </div>
+  }
+} @else {
+  <p>Loading…</p>
+}
+

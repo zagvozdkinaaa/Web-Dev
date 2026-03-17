@@ -1,0 +1,21 @@
+<h2>Recipes</h2>
+
+<div>
+
+  @for (recipe of recipes; track recipe.id) {
+
+    <div>
+
+      <h3>{{ recipe.title }}</h3>
+
+      <p>{{ recipe.body }}</p>
+
+      <a [routerLink]="['/recipes', recipe.id]">
+        Open
+      </a>
+
+    </div>
+
+  }
+
+</div>

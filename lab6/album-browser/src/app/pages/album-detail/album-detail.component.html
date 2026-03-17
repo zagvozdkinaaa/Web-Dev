@@ -1,0 +1,39 @@
+<h1>Album Details</h1>
+
+@if (album$ | async; as album) {
+  <p><b>ID:</b> {{ album.id }}</p>
+  <p><b>User ID:</b> {{ album.userId }}</p>
+
+  <label class="label">
+    Title:
+    <input type="text" [(ngModel)]="editedTitle" />
+  </label>
+
+  <div class="actions">
+    <button type="button" (click)="backToAlbums()">Back</button>
+    <button type="button" [disabled]="saving()" (click)="save(album)">
+      {{ saving() ? 'Saving…' : 'Save' }}
+    </button>
+    <label class="inline">
+      Photos:
+      <input
+        type="number"
+        min="1"
+        step="1"
+        [(ngModel)]="photosLimit"
+        (blur)="normalizePhotosLimit()"
+      />
+    </label>
+    <button type="button" (click)="viewPhotos()">View Photos →</button>
+    @if (saved()) {
+      <span class="saved">Saved</span>
+    }
+  </div>
+
+  <hr />
+
+  <router-outlet />
+} @else {
+  <p>Loading…</p>
+}
+
