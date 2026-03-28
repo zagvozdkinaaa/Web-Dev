@@ -36,5 +36,3 @@ yarn-error.log*
 # --- Окружение (секреты) ---
 .env
 .env.local
-
-__pycache__/
