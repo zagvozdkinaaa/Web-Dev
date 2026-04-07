@@ -7,4 +7,5 @@ urlpatterns = [
     path('categories/', views.get_categories),
     path('categories/<int:id>/', views.get_id_category),
     path('categories/<int:id>/products/', views.get_category_products),
+    path('categories/stat/', views.get_categories_stat)
 ]
